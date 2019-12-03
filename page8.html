@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.typekit.net/ngq0bkp.css">
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel=stylesheet href="style.css" type="text/css">	
+</head>
+	<div><h1>Manga Salsa</h1></div>
+	        <script>
+            know = {
+                "hello" : "hi",
+                "how are you?" : "good",
+                "ok" : ":)",
+				"Did you like my comic" : "I did espcially that Kit gave his Cookie to Pup",
+				"Thank you" : "X3" ,
+				"Wanna add" : ""
+            };
+            function talk() {
+                var user = document.getElementById("userBox").value;
+                document.getElementById("userBox").value = "";
+                document.getElementById("chatLog").innerHTML += user+"<br>";
+                if (user in know) {
+                    document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+                } else {
+                    document.getElementById("chatLog").innerHTML += "I don't understand...<br>";
+                }
+            } 
+        </script>
+ 
+	
+<body>
+
+        <p id="chatLog">- - C H A T - -<br></p>
+        <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+<a href="page3.html">Home</a>
+</body>
+</html>
